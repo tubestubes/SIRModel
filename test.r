@@ -10,10 +10,10 @@ D <- 14.0 # infections lasts D0 days
 g <- 1.0 / D
 param = c(N = N, b = b, g = g) # Parameter vect
 
-I0 = 1
-R0 = 0
-S0 = N - I0
-y0 <- c(S = 9999, I = 1, R = ) # Init conditions vector one infected, rest susceptible
+I = 1
+R = 0
+S = N - I
+y0 <- c(S = S, I = I, R = R) # Init conditions vector one infected, rest susceptible
 
 t <- 0:50 # time points (in days)
 
